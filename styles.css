@@ -255,6 +255,67 @@
   .icon-btn:focus-visible svg {
     stroke: #000;
   }
+
+/* Collection */
+
+.page-collection .page-title .h1 {
+    font-size: clamp(1.8rem, 2.6vw + 1rem, 2.6rem);
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: .2px;
+    margin: 0;
+  }
+  
+  .collection-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 1.2rem;
+  }
+  
+  /* Card */
+  .collection-card .thumb{
+    display: block;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    aspect-ratio: 4 / 3;
+  }
+  .collection-card .thumb img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.05);
+    transition: transform .35s ease, opacity .35s ease;
+    transform: scale(1.02); opacity: .95;
+  }
+  .collection-card .thumb:hover img{ transform: scale(1.06); opacity: 1; }
+  
+  .collection-card .meta{ padding-top: .55rem; }
+  .collection-card .row{
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: .75rem;
+  }
+  .collection-card .title{
+    font-size: 1rem; font-weight: 700;
+  }
+  .collection-card .year{
+    color: var(--muted); font-size: .95rem; white-space: nowrap;
+  }
+  .collection-card .sub{
+    color: var(--muted); margin-top: .15rem; font-size: .95rem;
+  }
+  
+  .section-divider{
+    border: 0; border-top: 1px solid var(--line); margin: 1.8rem 0 0;
+  }
+  
+  /* Vision block */
+  .vision .h2{
+    margin-bottom: .35rem; font-weight: 800; font-size: 1.4rem;
+  }
+
+/* Histoire */
+
 .page-history .history-title{
     font-weight: 800;
     font-size: clamp(2rem, 2.6vw + 1rem, 2.8rem);
@@ -266,7 +327,7 @@
   .page-history .page-title .history-title{
     text-align: center;
   }
-  
+
   .page-history .story-image{
     position: relative;
     width: 100vw;                 
