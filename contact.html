@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Les Instants Suspendus — Contact</title>
+    <meta name="description" content="Formulaire de contact." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-contact">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <img src="Photo Project/Captură de ecran din 2025-10-17 la 15.00.26.png" alt="Les Instants Suspendus" />
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section page-title">
+        <div class="container">
+          <h1 class="h1">Formulaire de Contact</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+        <form
+            class="contact-card"
+            action="mailto:mariusghelbet@gmail.com"
+            method="post"
+            enctype="text/plain"
+        >
+        <input type="hidden" name="Subject" value="Mesaj din formular — Les Instants Suspendus" />
+
+        <label class="fld">
+            <span class="lbl">Nom</span>
+            <input
+              type="text"
+              name="Nom"
+              autocomplete="family-name"
+              required
+              pattern="^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$"
+              title="Lettres, espaces, apostrophes et tirets (min. 2 caractères)."
+              placeholder=" "
+            />
+            <small class="err">Veuillez entrer un nom valide (lettres uniquement).</small>
+          </label>
+          
+          <label class="fld">
+            <span class="lbl">Prénom</span>
+            <input
+              type="text"
+              name="Prénom"
+              autocomplete="given-name"
+              required
+              pattern="^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$"
+              title="Lettres, espaces, apostrophes et tirets (min. 2 caractères)."
+              placeholder=" "
+            />
+            <small class="err">Veuillez entrer un prénom valide (lettres uniquement).</small>
+          </label>
+          
+          <label class="fld">
+            <span class="lbl">Email</span>
+            <input
+              type="email"
+              name="Email"
+              autocomplete="email"
+              required
+              inputmode="email"
+              placeholder=" "
+            />
+            <small class="err">Veuillez saisir une adresse e-mail valide.</small>
+          </label>
+          
+          <label class="fld">
+            <span class="lbl">Téléphone</span>
+            <input
+              type="tel"
+              name="Téléphone"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              pattern="^(?:\\+?\\d[\\d\\s().-]{7,}\\d)$"
+              title="Numéro de téléphone valide (peut commencer par +, accepte espaces, points, tirets, paranthèses). Au moins 9 chiffres."
+              placeholder=" "
+            />
+            <small class="err">Veuillez saisir un numéro de téléphone valide.</small>
+          </label>
+          
+          <label class="fld">
+            <span class="lbl">Message</span>
+            <textarea
+              name="Message"
+              rows="6"
+              minlength="10"
+              maxlength="1000"
+              required
+              placeholder=" "
+            ></textarea>
+            <small class="err">Le message doit contenir au moins 10 caractères.</small>
+          </label>
+          
+
+        <button class="btn btn-send" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ic">
+                <path d="M3 11.5l18-8-8 18-2.5-7L3 11.5z" fill="currentColor"></path>
+            </svg>
+            Envoyez
+        </button>
+        </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="Photo Project/Captură de ecran din 2025-10-17 la 15.00.26.png" alt="Les Instants Suspendus" />
+        </div>
+
+        <nav class="footer-nav" aria-label="Liens de bas de page">
+          <a href="#">Features</a>
+          <a href="#">Learn more</a>
+          <a href="#">Support</a>
+        </nav>
+
+        <div class="footer-icons" aria-label="Réseaux sociaux">
+          <a class="icon-btn" href="#" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="3.8"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"></circle></svg>
+          </a>
+          <a class="icon-btn" href="#" aria-label="X (Twitter)" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M21 3L3 21" stroke-linecap="round"></path></svg>
+          </a>
+          <a class="icon-btn" href="#" aria-label="E-mail" title="E-mail">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"></rect><path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
