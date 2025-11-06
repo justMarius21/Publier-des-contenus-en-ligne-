@@ -612,6 +612,79 @@
     .icon-btn svg{ width: 22px; height: 22px; }
   }
 /* =========================
+   Mobile collection.html 
+   ========================= */
+
+@media (max-width: 480px){
+
+    .page-collection .page-title .h1{
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    .page-collection .page-title{ padding-bottom: .5rem; }  
+    .page-collection .collections{ padding-top: .7rem; }
+
+    .page-collection .header-inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .4rem;
+      padding: .6rem 0;
+    }
+    .page-collection .logo img{ height: 40px; }
+    .page-collection .site-nav{ margin-left: 0; width: 100%; }
+    .page-collection .nav-list{
+      justify-content: space-around;
+      gap: .75rem;
+      width: 100%;
+    }
+  
+    .page-collection .collection-grid{
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .page-collection .collection-card .thumb{
+      aspect-ratio: 4 / 3;         
+      border-radius: 12px;
+    }
+    .page-collection .collection-card .thumb img{
+      transform: none;              
+    }
+  
+    .page-collection .collection-card .meta{ padding-top: .45rem; }
+    .page-collection .collection-card .row{
+      align-items: baseline;
+      gap: .5rem;
+    }
+    .page-collection .collection-card .title{ font-size: 1rem; }
+    .page-collection .collection-card .year{ font-size: .9rem; }
+    .page-collection .collection-card .sub{
+      margin-top: .2rem;
+      font-size: .93rem;
+    }
+  
+    .page-collection .section-divider{ margin-top: 1.2rem; }
+  
+    .page-collection .vision .h2{
+      font-size: 1.1rem; margin-bottom: .3rem;
+    }
+    .page-collection .vision .muted{
+      font-size: .95rem; line-height: 1.55;
+    }
+  
+    .footer-inner{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: .8rem;
+    }
+    .footer-nav{ justify-content: center; }
+    .footer-icons{ margin-left: 0; gap: .6rem; }
+    .icon-btn{ width: 44px; height: 44px; }
+    .icon-btn svg{ width: 22px; height: 22px; }
+  }
+
+/* =========================
    Mobile histoire.html 
    ========================= */
 @media (max-width: 480px){
