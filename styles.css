@@ -381,63 +381,6 @@
     letter-spacing: .2px;
     text-align: center;
   }
-.page-history .history-title{
-    font-weight: 800;
-    font-size: clamp(2rem, 2.6vw + 1rem, 2.8rem);
-    line-height: 1.15;
-    letter-spacing: .2px;
-  }
-  .page-history .history-title span{ display:inline-block; }
-
-  .page-history .page-title .history-title{
-    text-align: center;
-  }
-  
-  .page-history .story-image{
-    position: relative;
-    width: 100vw;                 
-    max-width: none;
-    margin-left: 50%;             
-    transform: translateX(-50%);
-    height: clamp(480px, 62vh, 860px); 
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-    background: var(--panel);
-  }
-  .page-history .story-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(1) contrast(1.05);
-  }
-  
-  .container.narrow{ width: min(100% - 2rem, 820px); }
-  
-  .page-history p{
-    color: var(--muted);
-    margin: 0 0 .9rem;
-  }
-  
-  .blocks{ display: grid; gap: 1.4rem; }
-  .blocks .block h2{
-    font-size: 1.15rem; font-weight: 800; margin: 0 0 .25rem;
-  }
-  .blocks .block p{ margin: 0; }
-  
-  .history-quote{
-    margin: 1.8rem auto 0;
-    width: min(100% - 2rem, 900px);
-    text-align: center;
-    font-size: clamp(1.4rem, 1.6vw + .8rem, 2rem);
-    line-height: 1.4;
-    color: #fff;
-    padding: 1.4rem 1.2rem;
-    border-radius: 14px;
-    background: rgba(255,255,255,.04);
-    border: 1px solid var(--line);
-  }
-
   
   .contact-card{
     width: min(100%, 760px);
